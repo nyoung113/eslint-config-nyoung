@@ -1,4 +1,3 @@
 module.exports = {
-    "extends" : ['lib/default'],
-    plugins: ['next'],
+    "extends" : ['../default.js'],
 }

@@ -1,6 +1,14 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    "extends": ["eslint:recommended"],
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        ],
+
+    "plugins" : ["unused-imports"],
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
@@ -14,18 +22,6 @@ module.exports = {
         es6: true,
         node: true,
     },
-    plugins: [
-        '@typescript-eslint',
-        '@tanstack/query',
-        'import',
-        'jsdoc',
-        'jsx-a11y',
-        'prettier',
-        'react',
-        'react-hooks',
-        'unused-imports',
-    ],
-    // 사용할 규칙 설정
     "rules": {
         'import/extensions': [
             'error',
@@ -38,6 +34,8 @@ module.exports = {
             },
         ],
         'no-unused-vars' : 'off',
+        "unused-imports/no-unused-imports": "error",
         '@typescript-eslint/no-unused-vars' : ['error']
+
     },
 }

@@ -1,1 +1,1 @@
-require('./lib/default.js');
+require('./default.js');

@@ -1,26 +1,32 @@
 {
   "name": "eslint-config-nyoung",
-  "version": "0.0.4",
+  "version": "0.0.11",
   "description": "eslint config for React, Next.js for myself(nyoung)",
   "author": "nyoung",
-  "keywords": ["eslint", "eslintconfig"],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
   "license": "MIT",
   "main": "index.js",
+  "homepage": "https://github.com/nyoung113/eslint-config-nyoung",
+  "bugs": {
+    "url": "https://github.com/nyoung113/eslint-config-nyoung/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nyoung113/eslint-config-nyoung"
+  },
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "exports": {
-    ".": "./index.js",
-    "./next": "./next/index.js"
   },
   "peerDependencies": {
     "@tanstack/eslint-plugin-query": ">=5",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
     "eslint": ">=8",
-    "eslint-config-next": ">=13",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.0.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -28,16 +34,15 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3",
-    "react": ">=18"
+    "react": ">=18",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.1.0",
     "@tanstack/eslint-plugin-query": "^5.17.22",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
     "eslint": "^8.56.0",
-    "eslint-config-next": "^14.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsdoc": "^48.0.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -45,7 +50,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "prettier": "^3.2.4",
     "typescript": "^5.3.3"
   }
 }
