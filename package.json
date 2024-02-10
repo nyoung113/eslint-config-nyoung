@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "eslint config for React, Next.js for myself(nyoung)",
   "author": "nyoung",
+  "keywords": ["eslint", "eslintconfig"],
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -12,7 +13,7 @@
   },
   "exports": {
     ".": "./index.js",
-    "./next": "./src/next.js"
+    "./next": "./next/index.js"
   },
   "peerDependencies": {
     "@tanstack/eslint-plugin-query": ">=5",
