@@ -1,7 +1,4 @@
 module.exports = {
-    "extends" : ['/lib/default'],
-    plugins: [
-        'next'
-    ],
-
+    "extends" : ['lib/default'],
+    plugins: ['next'],
 }

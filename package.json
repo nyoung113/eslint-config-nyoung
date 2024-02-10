@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nyoung",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "eslint config for React, Next.js for myself(nyoung)",
   "author": "nyoung",
   "keywords": ["eslint", "eslintconfig"],
