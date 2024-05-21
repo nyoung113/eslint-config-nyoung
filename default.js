@@ -23,6 +23,24 @@ module.exports = {
         node: true,
     },
     "rules": {
+        'import/order': [
+            'error',
+            {
+                groups: ['builtin', 'external', ['parent', 'sibling'], 'index'],
+                pathGroups: [
+                    {
+                        pattern: 'angular',
+                        group: 'external',
+                        position: 'before'
+                    }
+                ],
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: true,
+                },
+                'newlines-between': 'always',
+            },
+        ],
         'import/extensions': [
             'error',
             {
@@ -35,7 +53,16 @@ module.exports = {
         ],
         'no-unused-vars' : 'off',
         "unused-imports/no-unused-imports": "error",
-        '@typescript-eslint/no-unused-vars' : ['error']
+        '@typescript-eslint/no-unused-vars' : ['error'],
+        'no-restricted-imports' : [
+            'error', {
+            paths : [{
+                name : 'react',
+                importsNames : ['default'],
+                message: "import React from 'react' 는 react 17부터 더 이상 필요하지 않습니다. 필요한 것만 react로부터 import해서 사용해주세요."
+            }]
+            }
+        ]
 
     },
 }

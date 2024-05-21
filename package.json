@@ -3,6 +3,7 @@
   "version": "0.0.11",
   "description": "eslint config for React, Next.js for myself(nyoung)",
   "author": "nyoung",
+  "type" : "module",
   "keywords": [
     "eslint",
     "eslintconfig"
